@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1C1C1C;
+    color: #FAFAFF;
+}
+
+/* make the highlight color red */
+::selection {
+    background: #DA3E52;
+}
+
+header {
+    background-color: #2660A4;
+    height: 100px;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: auto;
+    font-size: 48pt;
+    padding-top: 0.5rem;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#summary {
+    display: flex;
+    height: 30rem;
+    justify-content: center;
+    justify-items: center;
+    margin: 2rem;
+}
+
+#summary div {
+    font-size: 24pt;
+    text-align: left;
+    padding: 1rem;
+    width: 40rem;
+    margin-left: 1rem;
+    padding-top: 0rem;
+}
+
+#tagline {
+    font-size: 32pt;
+    margin-top: 0rem;
+}
+
+nav {
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 70%;
+}
+
+nav a {
+    margin: 0.5rem;
+}
+
+nav div {
+    font-size: 24pt;
+    text-align: center;
+    line-height: 15rem;
+    background-color: #DA3E52;
+    width: 15rem;
+    height: 15rem;
+}
+
+nav img {
+    width: 100%;
+    height: 100%;
+    transition: filter 0.25s;
+}
+
+nav img:hover {
+    filter: opacity(40%) saturate(50%);
+}
+
+h2 {
+    font-size: 36pt;
+    text-align: center;
+}
+
+#gallery {
+    justify-content: center;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+    width: 80%;
+    justify-content: center;
+    max-height: 50rem;
+}
+
+.gameplayCont {
+    margin: 0 1rem;
+    border: 5px solid #6CD4FF;
+}
+
+#gallery h3 {
+    margin-top: 0rem;
+}
+
+#gallery .gameplayCont {
+    transition: border 0.25s;
+}
+
+#gallery .gameplayCont:hover {
+    border: 5px solid #DA3E52;
+}
+
+.gameplayCont img {
+    width: 100%;
+    height: 100%;
+}
+
+.project article {
+    max-width: 40%;
+    text-align: center;
+    padding: 2rem;
+    background-color: #2660A4;
+    margin: 0 1rem;
+}
+
+.project p {
+    font-size: 1.5vw;
+    line-height: 1.5;
+}
+
+.even { /*make every other project flex in the opposite direction*/
+    flex-direction: row-reverse;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+#resume {
+    background-color: #2660A4;
+    padding: 0.5rem;
+}
+
+iframe {
+    display: block;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.project h3 {
+    margin-bottom: 0.5em; /* make the download closer to the title */
+}
+    
+a:link {
+    color:  #6CD4FF;
+    text-decoration: none;
+}
+
+a:hover {
+    color:  #6CD4FF;
+    text-decoration: underline;
+}
+
+a:active {
+    color:  #6CD4FF;
+    text-decoration: underline;
+}
+
+a:visited {
+    color:  #6CD4FF;
+}
+
+@media screen and (max-width: 1000px) {
+    #summary {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    #summary img {
+        max-width: 300px;
+    }
+
+    #tagline {
+        text-align: center;
+    }
+
+    #summary div {
+        width: 100%;
+        margin: 0;
+    }
+
+    #summary p {    
+        font-size: 5vw;
+    }
+
+    nav {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    nav div {
+        width: 20rem;
+        height: 20rem;
+        line-height: 25rem;
+        font-size: 32pt;
+    }
+
+    .project {
+        flex-direction: column;
+        width: 100%;
+        max-height: 100rem;
+        margin-left: 0rem;
+        margin-right: 0rem;
+
+        /* make the edges of the image and article line up */
+        border-left: 5px solid #2660A4;
+        border-right: 5px solid #2660A4;
+    }
+
+    .project article {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .project p {
+        font-size: 5vw;
+        padding: 0;
+        padding: 0;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
+    .gameplayCont {
+        width: 100%;
+        margin: 0;
+        border: 5px solid #6CD4FF;
+    }
+
+    /* no navigation, resume, or download links on mobile */
+    nav, iframe, #resume h2, #resumeLink, article a {
+        display: none;
+    }
+}

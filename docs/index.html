@@ -19,39 +19,18 @@
                 <p>
                     I am a fifth year Game Design and Development student in a five year BS/MS program at the Rochester Institute
                     of Technology. I specialize in designing and programming games,
-                    but I care about all aspects of game development.
+                    but I pay attention to all aspects of game development.
                     <br><br>
                     Github: <a href="https://github.com/Starchy29">https://github.com/Starchy29</a><br>
                     Email: ejb3432@rit.edu<br>
                     Phone: (508) 446-2067<br>
-                    <a href="#resume">Resume</a>
+                    <a id="resumeLink" href="#resume">Resume</a>
                 </p>
             </div>
         </div>
 
         <section id="gallery">
             <h2>Game Projects</h2>
-
-            <nav>
-                <a href="#asteroid">
-                    <div><img src="media/asteroid rush title screen.png" alt="The title screen of 'Asteroid Rush'"></div>
-                </a>
-                <a href="#lonely">
-                    <div><img src="media/lonely space title.png" alt="The title screen of 'It's Lonely in Space'"></div>
-                </a>
-                <a href="#chameleon">
-                    <div><img src="media/chameleon title.png" alt="The title screen of 'Camo Chameleon'"></div>
-                </a>
-                <a href="#morph-leak">
-                    <div><img src="media/morph leak title.PNG" alt="The title screen of 'Morph Leak'"></div>
-                </a>
-                <a href="#human-busters">
-                    <div><img src="media/human busters title.PNG" alt="The title screen of 'Human Busters'"></div>
-                </a>
-                <a href="#gravity">
-                    <div><img src="media/gravity title.PNG" alt="The title screen of 'Gravity'"></div>
-                </a>
-            </nav>
 
             <div id="asteroid" class="project even">
                 <div class="gameplayCont">
@@ -84,7 +63,24 @@
                     </p>
                 </article>
             </div>
-            <div id="chameleon" class="project even">
+            <div id="death" class="project even">
+                <div class="gameplayCont">
+                    <img src="media/death chain screenshot.png" alt="A screenshot of 'Death Chain'">
+                </div>
+                <article>
+                    <h3>Death Chain</h3>
+                    <a href="https://starchy29.github.io/DeathChain/">https://starchy29.github.io/DeathChain/</a>
+                    <p>
+                        This is my current personal project that I have been working on since finishing Morph Leak. 
+                        The player plays as a ghost who can possess the bodies of enemies they defeat,
+                        granting them all of the same abilities as that enemy.
+                        The game is a roguelike with procedural level generation.
+                        It also has an AI system that allows quick implementation of enemy behaviors.
+                        The next steps for this project are creating more enemy types and improving level design/generation.
+                    </p>
+                </article>
+            </div>
+            <div id="chameleon" class="project">
                 <div class="gameplayCont">
                     <img src="media/chameleon screenshot.png" alt="A screenshot of 'Camo Chameleon'">
                 </div>
@@ -101,7 +97,7 @@
                     </p>
                 </article>
             </div>
-            <div id="morph-leak" class="project">
+            <div id="morph-leak" class="project even">
                 <div class="gameplayCont">
                     <img src="media/morph leak gameplay.PNG" alt="A screenshot of 'Morph Leak'">
                 </div>
@@ -114,22 +110,6 @@
                         They switch between three different textures (bouncy, slippery, and sticky), which each have different movement
                         abilities. In addition to programming the game, I programmed a level editor so I could easily design levels.
                         I designed 34 levels total, composed 4 music tracks, and illustrated all of the art assets.
-                    </p>
-                </article>
-            </div>
-            <div id="human-busters" class="project even">
-                <div class="gameplayCont">
-                    <img src="media/human busters gameplay.PNG" alt="A screenshot of 'Human Busters'">
-                </div>
-                <article>
-                    <h3>Human Busters</h3>
-                    <a href="https://dinowolf10.github.io/Human-Exterminator/">https://dinowolf10.github.io/Human-Exterminator/</a>
-                    <p>
-                        In Game Design and Development 2, four classmates and I created an action stealth game.
-                        We used Unity as our game engine and C# as our scripting language.
-                        The player plays as a ghost hired by fellow ghosts to scare humans out of haunted houses.
-                        They must avoid the light from the humans' flashlights and jump scare them from behind.
-                        I composed background music and designed 10 levels for it. I also programmed the enemy movement patterns.
                     </p>
                 </article>
             </div>
@@ -156,6 +136,21 @@
             <h2>Other Projects</h2>
             <div class="project even">
                 <div class="gameplayCont">
+                    <img src="media/ps4 space game.png" alt="A screenshot of 'Generic PS4 Space Game'.">
+                </div>
+                <article>
+                    <h3>PS4 Space Game</h3>
+                    <p>
+                        I took a class called Console Development that required me to program a simple game on a Playstation 4 development kit.
+                        The starter code was only capable of drawing a single triangle using the graphics API.
+                        So, I had to use my knowledge of graphics code and game engines to create the code architecture that allowed me to
+                        easily implement game mechanics.
+                        I then used the engine to create a simple space shooter with scrolling stars.
+                    </p>
+                </article>
+            </div>
+            <div class="project">
+                <div class="gameplayCont">
                     <img src="media/graphics museum screenshot.png" alt="A screenshot of the graphics museum.">
                 </div>
                 <article>
@@ -170,7 +165,7 @@
                     </p>
                 </article>
             </div>
-            <div class="project">
+            <div class="project even">
                 <div class="gameplayCont">
                     <img src="media/baba level.png" alt="A screenshot of a custom level in 'Baba is You'">
                 </div>
@@ -186,7 +181,7 @@
                     </p>
                 </article>
             </div>
-            <div class="project even">
+            <div class="project">
                 <div class="gameplayCont">
                     <img src="media/poem.png" alt="A randomly generated poem'">
                 </div>

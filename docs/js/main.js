@@ -2,71 +2,34 @@
 
 window.onload = init;
 
-function init() {
-    document.querySelector("#asteroid div img").onmouseenter = () => { OnHover("asteroid"); };
-    document.querySelector("#lonely div img").onmouseenter = () => { OnHover("lonely"); };
-    document.querySelector("#chameleon div img").onmouseenter = () => { OnHover("chameleon"); };
-    document.querySelector("#morph-leak div img").onmouseenter = () => { OnHover("morph leak"); };
-    document.querySelector("#human-busters div img").onmouseenter = () => { OnHover("human busters"); };
-    document.querySelector("#gravity div img").onmouseenter = () => { OnHover("gravity"); };
+class ProjectData {
+    constructor(div, image, gif) {
+        this.div = div;
+        this.image = image;
+        this.gif = gif;
+    }
 }
 
-function OnHover(game) {
-    let asteroidSrc = "media/asteroid rush screenshot.png";
-    let lonelySrc = "media/lonely space screenshot.png";
-    let chamSrc = "media/chameleon screenshot.png";
-    let morphSrc = "media/morph leak gameplay.PNG";
-    let busterSrc = "media/human busters gameplay.PNG";
-    let gravitySrc = "media/gravity screenshot.PNG";
+let projects;
 
-    switch(game) {
-        case "asteroid":
-            if(document.querySelector("#asteroid div img").src.includes(".gif")) {
-                return;
-            }
-            asteroidSrc = "media/asteroid clip.gif";
-            break;
+function init() {
+    projects = [
+        new ProjectData(document.querySelector("#asteroid div img"), "media/asteroid rush screenshot.png", "media/asteroid clip.gif"),
+        new ProjectData(document.querySelector("#lonely div img"), "media/lonely space screenshot.png", "media/lonely space clip.gif"),
+        new ProjectData(document.querySelector("#death div img"), "media/death chain screenshot.png", "media/death chain clip.gif"),
+        new ProjectData(document.querySelector("#chameleon div img"), "media/chameleon screenshot.png", "media/chameleon clip.gif"),
+        new ProjectData(document.querySelector("#morph-leak div img"), "media/morph leak gameplay.PNG", "media/morph leak clip.gif"),
+        new ProjectData(document.querySelector("#gravity div img"), "media/gravity screenshot.PNG", "media/Gravity Clip.gif")
+    ];
 
-        case "lonely":
-            if(document.querySelector("#lonely div img").src.includes(".gif")) {
-                return;
-            }
-            lonelySrc = "media/lonely space clip.gif";
-            break;
+    projects.forEach((project) => {
+        project.div.onmouseenter = () => { OnHover(project); };
+    });
+}
 
-        case "chameleon":
-            if(document.querySelector("#chameleon div img").src.includes(".gif")) {
-                return;
-            }
-            chamSrc = "media/chameleon clip.gif";
-            break;
-
-        case "morph leak":
-            if(document.querySelector("#morph-leak div img").src.includes(".gif")) {
-                return;
-            }
-            morphSrc = "media/morph leak clip.gif";
-            break;
-
-        case "human busters":
-            if(document.querySelector("#human-busters div img").src.includes(".gif")) {
-                return;
-            }
-            busterSrc = "media/human busters clip.gif";
-            break;
-
-        case "gravity":
-            if(document.querySelector("#gravity div img").src.includes(".gif")) {
-                return;
-            }
-            gravitySrc = "media/Gravity Clip.gif";
-            break;
-    }
-
-    document.querySelector("#asteroid div img").src = asteroidSrc;
-    document.querySelector("#lonely div img").src = lonelySrc;
-    document.querySelector("#chameleon div img").src = chamSrc;
-    document.querySelector("#morph-leak div img").src = morphSrc;
-    document.querySelector("#human-busters div img").src = busterSrc;
-    document.querySelector("#gravity div img").src = gravitySrc;
+// makes the hovered project become a gif and the other projects become images
+function OnHover(hovered) {
+    projects.forEach((project) => {
+        project.div.src = (project == hovered ? project.gif : project.image);
+    });
 }

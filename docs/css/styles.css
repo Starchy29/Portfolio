@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #064084;
+    background-color: #2660A4;
     height: 100px;
     margin: 0;
 }
@@ -29,12 +29,12 @@ h1 {
 }
 
 h1, h2, h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 img {
-    max-width: 95%;
-    max-height: 95%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 #summary {
@@ -111,7 +111,7 @@ h2 {
 
 .gameplayCont {
     margin: 0 1rem;
-    border: 3px solid #6CD4FF;
+    border: 5px solid #6CD4FF;
 }
 
 #gallery h3 {
@@ -123,7 +123,7 @@ h2 {
 }
 
 #gallery .gameplayCont:hover {
-    border: 3px solid #DA3E52;
+    border: 5px solid #DA3E52;
 }
 
 .gameplayCont img {
@@ -135,7 +135,7 @@ h2 {
     max-width: 40%;
     text-align: center;
     padding: 2rem;
-    background-color: #064084;
+    background-color: #2660A4;
     margin: 0 1rem;
 }
 
@@ -153,7 +153,7 @@ h3 {
 }
 
 #resume {
-    background-color: #064084;
+    background-color: #2660A4;
     padding: 0.5rem;
 }
 
@@ -233,8 +233,8 @@ a:visited {
         margin-right: 0rem;
 
         /* make the edges of the image and article line up */
-        border-left: 5px solid #064084;
-        border-right: 5px solid #064084;
+        border-left: 5px solid #2660A4;
+        border-right: 5px solid #2660A4;
     }
 
     .project article {

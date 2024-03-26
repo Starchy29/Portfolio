@@ -32,7 +32,7 @@ h1, h2, h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-img {
+#summary img {
     max-width: 95%;
     max-height: 95%;
 }
@@ -59,7 +59,7 @@ img {
     margin-top: 0rem;
 }
 
-nav {
+/*nav {
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +89,7 @@ nav img {
 
 nav img:hover {
     filter: opacity(40%) saturate(50%);
-}
+}*/
 
 h2 {
     font-size: 36pt;
@@ -118,17 +118,18 @@ h2 {
     margin-top: 0rem;
 }
 
-#gallery .gameplayCont {
+.hasClip {
     transition: border 0.25s;
 }
 
-#gallery .gameplayCont:hover {
+.hasClip:hover {
     border: 3px solid #DA3E52;
 }
 
 .gameplayCont img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
 }
 
 .project article {

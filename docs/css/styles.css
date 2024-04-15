@@ -16,7 +16,7 @@ body {
 }
 
 header {
-    background-color: #2660A4;
+    background-color: #064084;
     height: 100px;
     margin: 0;
 }
@@ -29,12 +29,12 @@ h1 {
 }
 
 h1, h2, h3 {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+#summary img {
+    max-width: 95%;
+    max-height: 95%;
 }
 
 #summary {
@@ -59,7 +59,7 @@ img {
     margin-top: 0rem;
 }
 
-nav {
+/*nav {
     margin: 2rem auto;
     display: flex;
     flex-wrap: wrap;
@@ -89,7 +89,7 @@ nav img {
 
 nav img:hover {
     filter: opacity(40%) saturate(50%);
-}
+}*/
 
 h2 {
     font-size: 36pt;
@@ -106,36 +106,37 @@ h2 {
     margin: 2rem auto;
     width: 80%;
     justify-content: center;
-    max-height: 50rem;
+    height: 35vw;
 }
 
 .gameplayCont {
     margin: 0 1rem;
-    border: 5px solid #6CD4FF;
+    border: 3px solid #6CD4FF;
 }
 
 #gallery h3 {
     margin-top: 0rem;
 }
 
-#gallery .gameplayCont {
+.hasClip {
     transition: border 0.25s;
 }
 
-#gallery .gameplayCont:hover {
-    border: 5px solid #DA3E52;
+.hasClip:hover {
+    border: 3px solid #DA3E52;
 }
 
 .gameplayCont img {
     width: 100%;
     height: 100%;
+    object-fit: fill;
 }
 
 .project article {
     max-width: 40%;
     text-align: center;
     padding: 2rem;
-    background-color: #2660A4;
+    background-color: #064084;
     margin: 0 1rem;
 }
 
@@ -153,7 +154,7 @@ h3 {
 }
 
 #resume {
-    background-color: #2660A4;
+    background-color: #064084;
     padding: 0.5rem;
 }
 
@@ -228,13 +229,14 @@ a:visited {
     .project {
         flex-direction: column;
         width: 100%;
+        height: auto;
         max-height: 100rem;
         margin-left: 0rem;
         margin-right: 0rem;
 
         /* make the edges of the image and article line up */
-        border-left: 5px solid #2660A4;
-        border-right: 5px solid #2660A4;
+        /*border-left: 5px solid #064084;
+        border-right: 5px solid #064084;*/
     }
 
     .project article {

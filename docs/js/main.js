@@ -16,10 +16,9 @@ function init() {
     projects = [
         new ProjectData(document.querySelector("#asteroid div img"), "media/asteroid rush screenshot.png", "media/asteroid clip.gif"),
         new ProjectData(document.querySelector("#lonely div img"), "media/lonely space screenshot.png", "media/lonely space clip.gif"),
-        new ProjectData(document.querySelector("#death div img"), "media/death chain screenshot.png", "media/death chain clip.gif"),
+        new ProjectData(document.querySelector("#cauldron div img"), "media/cauldron screenshot.png", "media/cauldron clip.gif"),
         new ProjectData(document.querySelector("#chameleon div img"), "media/chameleon screenshot.png", "media/chameleon clip.gif"),
-        new ProjectData(document.querySelector("#morph-leak div img"), "media/morph leak gameplay.PNG", "media/morph leak clip.gif"),
-        new ProjectData(document.querySelector("#gravity div img"), "media/gravity screenshot.PNG", "media/Gravity Clip.gif")
+        new ProjectData(document.querySelector("#morph-leak div img"), "media/morph leak gameplay.PNG", "media/morph leak clip.gif")
     ];
 
     projects.forEach((project) => {
